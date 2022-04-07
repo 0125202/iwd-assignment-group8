@@ -1,0 +1,140 @@
+
+.pclose-btn {
+	position: absolute;
+	top: 2%;
+	right: 1%;
+	font-size: 1.5rem;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.form-success {
+	text-align: center;
+	font-size: 24px;
+	margin-top: 80px;
+	color: #fff;
+}
+
+.profile-container{
+	background:radial-gradient(
+		rgb(198, 216, 228) 0%,
+		rgb(138, 163, 179) 100%);
+	padding: 30px 0;
+}
+
+.pform-content {
+    /* position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+	width: 100%;
+	height: 120%;
+	display:flex;
+
+	justify-content:center;
+	align-items: center;
+	background:radial-gradient(
+		rgb(198, 216, 228) 0%,
+		rgb(138, 163, 179) 100%
+	); */
+	
+	z-index: 1;
+	position:flex;
+	width: 100%;
+	justify-content:center;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 500px;
+	padding-left: 500px;
+	@media screen and (max-width: 768px) {
+		max-width: 100%;
+		flex-basis: 100%;
+		display: flex;
+		justify-content: center;}
+}
+
+.pform h1 {
+	font-size: 2rem;
+	text-align: center;
+	width: 80%;
+	margin-bottom: 1rem;
+    margin-top: 10rem;
+	color: rgb(21, 47, 65);
+
+}
+.pform-inputs {
+	margin-bottom: 1rem;
+    margin-right: 1rem;
+	width: 80%;
+    text-align: center;
+
+}
+
+.pform-inputs p {
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
+	color: #f00e0e;
+}
+
+.pform-label {
+	display:flex;
+	font-size: 1rem;
+	margin-bottom: 10px;
+	color: rgb(24, 49, 66);
+    
+}
+
+.pform-input {
+	display:stretch;
+    align-items: center;
+	padding-left: 20px;
+	outline: none;
+	border-radius: 2px;
+	height: 40px;
+	width: 500px;
+	border: none;
+}
+
+.pform-input::placeholder {
+	color: #595959;
+	font-size: 12px;
+}
+
+.pform-btn {
+	width: 80%;
+	height: 50px;
+	margin-top: 10px;
+	/* dk why cannot be in middle so temporary use margin-left */
+	margin-left: 112px;
+	border-radius: 2px;
+	background: linear-gradient(
+		90deg,
+		rgb(84, 99, 117) 0%,
+		rgb(65, 73, 105) 100%
+	);
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.pform-btn:hover {
+	cursor: pointer;
+	background: linear-gradient(
+		90deg,
+		rgb(44, 84, 133) 0%,
+		rgb(45, 66, 148) 100%
+	);
+	transition: all 0.4s ease-out;
+}
+
+/* Dont display image & change the form size when being resized */
+@media only screen and (max-width: 960px) {
+
+	.close-btn {
+		color: rgb(35, 71, 95);
+		font-size: 1.5rem;
+	}
+}
